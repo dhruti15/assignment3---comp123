@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiantClass.cs" />
-    <Compile Include="Ihabitable.cs" />
+    <Compile Include="GaintPlanet.cs" />
+    <Compile Include="IHabitable.cs" />
     <Compile Include="IHasMoons.cs" />
     <Compile Include="IhasRings.cs" />
     <Compile Include="Planet.cs" />

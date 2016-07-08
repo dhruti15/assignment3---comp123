@@ -7,6 +7,5 @@ namespace Planets
 {
     public interface IHasMoons
     {
-        void Method();
     }
 }

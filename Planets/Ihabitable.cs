@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Planets
 {
-    public interface Ihabitable
+    public interface IHabitable
     {
+        bool Habitable();
     }
 }
