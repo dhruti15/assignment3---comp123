@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Planets
 {
-    public class GiantPlanet : Planet, IHasMoons, IhasRings
+    public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
-        private string _type = "Gas";
+        private bool _oxygen;
 
-        public void GaintPlanet(string name, double diameter, double mass, string type) : base(name, diameter, mass)
-        {
-            _type = type;
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) : base(name, diameter, mass)
+		{
+            _oxygen = oxygen;
         }
 
         public bool HasMoons()
@@ -22,9 +22,9 @@ namespace Planets
                 return false;
         }
 
-        public bool HasRings()
+        public bool Habitable()
         {
-            if (RingCount > 0)
+            if (_oxygen == true)
                 return true;
             else
                 return false;

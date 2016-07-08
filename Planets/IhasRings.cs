@@ -7,5 +7,6 @@ namespace Planets
 {
     public interface IhasRings
     {
+        bool HasRings();
     }
 }

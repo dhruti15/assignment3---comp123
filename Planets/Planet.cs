@@ -9,7 +9,7 @@ namespace Planets
     {
         private Double _diameter;
         private double _mass;
-        private int _mountCount;
+        private int _moonCount;
         private string _name;
         private double _orbitalPeriod;
         private int _ringCount;
@@ -19,11 +19,7 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return _diameter;
             }
         }
 
@@ -31,11 +27,7 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return _mass;
             }
         }
 
@@ -43,11 +35,11 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _moonCount;
             }
-
             set
             {
+                _moonCount = value;
             }
         }
 
@@ -55,11 +47,7 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
+                return _name;
             }
         }
 
@@ -67,11 +55,11 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _orbitalPeriod;
             }
-
             set
             {
+                _orbitalPeriod = value;
             }
         }
 
@@ -79,11 +67,11 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _ringCount;
             }
-
             set
             {
+                _ringCount = value;
             }
         }
 
@@ -91,22 +79,24 @@ namespace Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _rotationPeriod;
             }
-
             set
             {
+                _rotationPeriod = value;
             }
         }
 
-        public void planet()
+        public Planet(string name, double diameter, double mass)
         {
-            throw new System.NotImplementedException();
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
 
-        public string ToString()
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            return string.Format("Planet: Name={0}, Diameter={1}, Mass={2}", Name, Diameter, Mass);
         }
     }
 }
